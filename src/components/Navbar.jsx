@@ -83,9 +83,11 @@ export default function Navbar(){
         >
           <List>
             {navItems.map((item) => (
-              <ListItem button key={item.label}>
-                <ListItemText primary={item.label} />
-              </ListItem>
+                    <Link key={item.label} to={item.path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <Typography key={item.label} variant="button" sx={{color:isActive(item.path)?'primary.main':'inherit',cursor: 'pointer',"&:hover": {color: 'primary.main',transform: 'scale(1.05)',transition: 'all 0.3s ease-in-out'}}}>
+                        {item.label}
+                      </Typography>
+                    </Link>
             ))}
           </List>
         </Box>
