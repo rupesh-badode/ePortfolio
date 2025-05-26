@@ -37,7 +37,7 @@ export default function Navbar(){
           <Toolbar>
             <Box sx={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-between' }}>
               <Typography variant="h6" component="div" >
-                <Link to='/' > <img src="home-logo.png" style={{width:"50px"}} /></Link>
+                <Link to='/' > <img src="home-logo.png" alt="logo" style={{width:"50px"}} /></Link>
               </Typography>
               <Box sx={{ display: { xs: 'none',sm:"flex" }, gap:3}}>
                 {navItems.map((item) => (
