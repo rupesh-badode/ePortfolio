@@ -1,18 +1,25 @@
 import { useState } from "react";
-import { AppBar, Box,Container,Drawer, IconButton,Avatar,List,ListItem,ListItemText, Slide, Toolbar, Typography} from "@mui/material";
+import { AppBar, Box,Container,Drawer, IconButton,Avatar,List,ListItem,ListItemText, Slide, Toolbar, Typography, ListItemButton} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import Brightness7 from "@mui/icons-material/Brightness7";
 import Brightness4 from "@mui/icons-material/Brightness4";
 
-import { Link ,useLocation} from "react-router-dom";
+import { Link ,useLocation, useNavigate} from "react-router-dom";
 import { useThemeContext } from "../theme/ThemeProvide";
 
 export default function Navbar(){
+
+    const navigate = useNavigate();
 
     const[mobileOpen,setMobileOpen] = useState(false);
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     }
+    const handleNavigation = (path) => {
+      navigate(path); // if using react-router
+      handleDrawerToggle(); // to close the drawer
+    };
+
     const location = useLocation();
     const isActive = (path) => {
       return location.pathname === path;
@@ -81,15 +88,15 @@ export default function Navbar(){
           onClick={handleDrawerToggle}
           onKeyDown={handleDrawerToggle}
         >
-          <List>
-            {navItems.map((item) => (
-                    <Link key={item.label} to={item.path} style={{ textDecoration: 'none', color: 'inherit' }}>
-                      <Typography key={item.label} variant="button" sx={{color:isActive(item.path)?'primary.main':'inherit',cursor: 'pointer',"&:hover": {color: 'primary.main',transform: 'scale(1.05)',transition: 'all 0.3s ease-in-out'}}}>
-                        {item.label}
-                      </Typography>
-                    </Link>
-            ))}
-          </List>
+        <List>
+          {navItems.map((item) => (
+            <ListItem key={item.label} disablePadding>
+              <ListItemButton onClick={()=>handleNavigation(item.path)} >
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
         </Box>
       </Drawer>
       </div>
