@@ -15,7 +15,7 @@ export default function Footer() {
             borderTop: "1px solid #e0e0e0",
           }}
         >
-          <Grid container spacing={4} justifyContent="space-between" alignItems="center">
+          <Grid container spacing={4} justifyContent="space-between" alignItems="center" textAlign="center">
             
             {/* Left: Branding */}
             <Grid item xs={12} md={4} textAlign={{ xs: "center", md: "left" }}>

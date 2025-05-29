@@ -62,10 +62,10 @@ export default function Navbar(){
                 <IconButton color="inherit" edge="end" >
                     <Avatar alt="Cindy Baker" src="profile.jpg" />
                 </IconButton>
+                <IconButton color="inherit" edge="end" onClick={handleDrawerToggle} sx={{ display: { sm: 'none' } }} >
+                    <MenuIcon />
+                </IconButton>
               </Box>
-              <IconButton color="inherit" edge="end" onClick={handleDrawerToggle} sx={{ display: { sm: 'none' } }} >
-                <MenuIcon />
-              </IconButton>
             </Box>
           </Toolbar>
           </Container>
@@ -88,15 +88,15 @@ export default function Navbar(){
           onClick={handleDrawerToggle}
           onKeyDown={handleDrawerToggle}
         >
-        <List>
-          {navItems.map((item) => (
-            <ListItem key={item.label} disablePadding>
-              <ListItemButton onClick={()=>handleNavigation(item.path)} >
-                <ListItemText primary={item.label} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+          <List>
+            {navItems.map((item) => (
+              <ListItem key={item.label} disablePadding>
+                <ListItemButton onClick={()=>handleNavigation(item.path)} >
+                  <ListItemText primary={item.label} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
         </Box>
       </Drawer>
       </div>
