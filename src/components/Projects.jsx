@@ -20,11 +20,11 @@ const projects = [
     liveLink: 'https://ecommerce-app.vercel.app'
   },
   {
-    title: 'Job Portal',
-    description: 'from intership we will build web-app called job portal.by using React+Tailwind,JWT token ,axios ,formik etc.',
-    image: 'https://via.placeholder.com/300x180',
-    sourceLink: 'https://github.com/yourusername/portfolio',
-    liveLink: 'https://yourportfolio.vercel.app'
+    title: 'E-commerce App',
+    description: 'An e-commerce app built with NextJs, React, Redux, and Firebase.',
+    image: '/Projects/E-commerce.png',
+    sourceLink: 'https://github.com/rupesh-badode/E-Commerce',
+    liveLink: 'https://e-commerce-tawny-eta-11.vercel.app/'
   },
   {
     title: 'Weather App',

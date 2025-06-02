@@ -5,6 +5,8 @@ import {Box,Button,Container,TextField,Typography,Alert,CircularProgress,Paper,}
 import CallIcon from '@mui/icons-material/Call';
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoIosCall } from "react-icons/io";
 
 const FormikTextField = ({ name, label, multiline = false, rows = 1 }) => (
   <Field name={name}>
@@ -74,7 +76,7 @@ const ContactForm = () => {
             <Typography variant="h4" align="center" gutterBottom>
               Get In Touch
             </Typography>
-            <Typography variant="body2" align="center" color="text.secondary" mb={3}>
+            <Typography variant="body2" align="center" color="#1769aa" mb={3}>
               Feel free to drop a message. I'd love to connect!
             </Typography>
 
@@ -141,10 +143,10 @@ const ContactForm = () => {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
           <Box sx={{ mt: 4,display:"flex",justifyContent:"space-evenly",flexWrap:"wrap",gap:2 , textAlign: "center" }}>
             <Typography variant="subtitle1" starticon={<CallIcon/>}  gutterBottom>
-               Mobile: <strong>+91 8963932223</strong>
+              <IoIosCall />: <strong>+91 8963932223</strong>
             </Typography>
             <Typography variant="subtitle1">
-              📍 Location: <strong>Khandwa (M.P.), India</strong>
+              <FaLocationDot />: <strong>Khandwa (M.P.), India</strong>
             </Typography>
           </Box>
         </motion.div>

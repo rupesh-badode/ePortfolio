@@ -1,5 +1,6 @@
 import { Box, Typography, Link as MuiLink, IconButton, Grid, Slide, Container } from "@mui/material";
-import { GitHub, LinkedIn, Email} from "@mui/icons-material";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -46,17 +47,13 @@ export default function Footer() {
             {/* Right: Social Media Icons */}
             <Grid item xs={12} md={4} textAlign={{ xs: "center", md: "right" }}>
               <IconButton href="https://github.com/rupesh-badode" target="_blank" rel="noopener" aria-label="GitHub">
-                <GitHub sx={{ color: "#1c1c1c" }} />
+                <FaGithub color="primary" />
               </IconButton>
               <IconButton href="https://linkedin.com/in/rupesh-badode" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <LinkedIn color="primary" />
+                <FaLinkedin />
               </IconButton>
-              <IconButton
-                href="mailto:rupeshbadode77@gmail.com"
-                aria-label="Email"
-                title="Email"
-                target="_blank">
-                <Email sx={{ color: "#3f51b5" }} />
+              <IconButton href="mailto:rupeshbadode77@gmail.com" aria-label="Email" title="Email" target="_blank">
+                <IoIosMail />
               </IconButton>
             </Grid>
           </Grid>
