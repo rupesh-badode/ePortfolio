@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import {Typography,Card,CardHeader,CardMedia,CardContent,CardActions, Container, Button, Stack, Slide,Box,Paper, Grid,useTheme} from "@mui/material";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {motion} from "framer-motion";
 import { useEffect } from "react";
 import AOS from "aos";
 
