@@ -161,7 +161,7 @@ export default function Hero(){
             component="img"
             src="iPhone-13-Pro-Max-localhost.png"
             alt="mobile"
-            sx={{ width: "250" }}
+            sx={{ width:250}}
           />
         </Container>
         
