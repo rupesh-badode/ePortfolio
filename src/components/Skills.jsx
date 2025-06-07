@@ -1,3 +1,7 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {
   Card,
   CardContent,
@@ -7,9 +11,7 @@ import {
   CardMedia,
   Container,
 } from "@mui/material";
-import { motion } from "framer-motion";
 
-// Skill data with images, experience, and version
 const skills = [
   { name: "HTML", experience: "0.6 years", version: "v5", img: "./assets/html5.png" },
   { name: "CSS", experience: "0.6 years", version: "v3", img: "./assets/css.png" },
@@ -33,6 +35,10 @@ const skills = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
+
   return (
     <Box sx={{ py: 6, bgcolor: "background.default" }}>
       <Container maxWidth="lg">
@@ -45,20 +51,12 @@ const Skills = () => {
           My Skills
         </Typography>
 
-        <Grid
-          container
-          spacing={4}
-          justifyContent="center"
-          alignItems="center"
-        >
+        <Grid container spacing={4} justifyContent="center" alignItems="center">
           {skills.map((skill, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+              <div
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <Card
                   elevation={6}
@@ -67,6 +65,11 @@ const Skills = () => {
                     textAlign: "center",
                     height: "100%",
                     p: 2,
+                    transition: "transform 0.3s",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      boxShadow: 6,
+                    },
                   }}
                 >
                   <CardMedia
@@ -93,7 +96,7 @@ const Skills = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             </Grid>
           ))}
         </Grid>

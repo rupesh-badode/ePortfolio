@@ -1,11 +1,19 @@
 import Slider from "react-slick";
-import {Typography,Card,CardHeader,CardMedia,CardContent,CardActions, Container, Button, Stack, Slide,Box,Paper, Grid,useTheme} from "@mui/material";
+import {Typography,Card,CardHeader,CardMedia,CardContent,CardActions, Container, Button, Stack, Slide,Box,Paper, Grid,useTheme, duration} from "@mui/material";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {motion} from "framer-motion";
-
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function Hero(){
     
+
+  useEffect(() => {
+    AOS.init({
+      duration:2000,
+      once:false,
+    })
+  },[])
 
     const theme = useTheme();
     const MotionCard = motion(Card);
@@ -115,7 +123,7 @@ export default function Hero(){
 
         {/* Carousel Section */}
       
-        <Container sx={{p:5}} >
+        <Container sx={{p:5}}  data-aos="fade-up" data-aos-duration="2000">
           <Typography variant="h4" align="center" gutterBottom>Build <span style={{ color: 'red' }}>fast</span>, Component based sites</Typography>
             <Box sx={{ maxWidth:1000, mx: "auto", my: 5,p:2}}>
             <Slider {...settings}>
@@ -145,7 +153,7 @@ export default function Hero(){
 
         {/* Welcome Section */}
 
-        <Container sx={{justifyContent:"center",alignItems:"center",display:"flex",flexDirection:"column",p:5}}>
+        <Container sx={{justifyContent:"center",alignItems:"center",display:"flex",flexDirection:"column",p:5}} data-aos="fade-up">
           <Typography variant="h4" align="center" gutterBottom>
             Welcome to <b>My Responsive</b> <span style={{ color: "green" }}>Portfolio</span>
           </Typography>
@@ -159,48 +167,52 @@ export default function Hero(){
         
 
                {/* Why Choose Us Section  */}
-
-    <div style={{ padding: '40px 20px', background: theme.palette.background.default }}>
-      <Typography variant="h4" gutterBottom align="center">
-        Why Choose Us ?
-      </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        {reasons.map((reason, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <MotionCard
-              whileHover={{ scale: 1.05 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              initial={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              elevation={4}
-              sx={{
-                maxWidth: 345,
-                mx: 'auto',
-                borderRadius: 3,
-                overflow: 'hidden',
-                transition: 'transform 0.3s',
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="180"
-                image={reason.image}
-                alt={reason.title}
-              />
-              <CardContent>
-                <Typography variant="h6" color="success.main"  gutterBottom>
-                  {reason.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {reason.description}
-                </Typography>
-              </CardContent>
-            </MotionCard>
+        <div style={{ padding: '40px 20px', background: theme.palette.background.default }} data-aos="fade-up">
+          <Typography variant="h4" gutterBottom align="center">
+            Why Choose Us ?
+          </Typography>
+          <Grid container spacing={4} justifyContent="center">
+            {reasons.map((reason, index) => (
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
+                key={index}
+              >
+                <Card
+                  elevation={4}
+                  sx={{
+                    maxWidth: 345,
+                    mx: 'auto',
+                    borderRadius: 3,
+                    overflow: 'hidden',
+                    transition: 'transform 0.3s',
+                    cursor: 'pointer',
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    height="180"
+                    image={reason.image}
+                    alt={reason.title}
+                  />
+                  <CardContent>
+                    <Typography variant="h6" color="success.main" gutterBottom>
+                      {reason.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {reason.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
-        ))}
-      </Grid>
-    </div>
+        </div>
 
         </>
     )

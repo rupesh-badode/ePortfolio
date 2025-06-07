@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import 'aos/dist/aos.css';
 
 
 
