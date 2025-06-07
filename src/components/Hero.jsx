@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import {Typography,Card,CardHeader,CardMedia,CardContent,CardActions, Container, Button, Stack, Slide,Box,Paper, Grid,useTheme, duration} from "@mui/material";
+import {Typography,Card,CardHeader,CardMedia,CardContent,CardActions, Container, Button, Stack, Slide,Box,Paper, Grid,useTheme} from "@mui/material";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {motion} from "framer-motion";
 import { useEffect } from "react";
@@ -16,7 +16,6 @@ export default function Hero(){
   },[])
 
     const theme = useTheme();
-    const MotionCard = motion(Card);
 
                          // Why Choose Us Section
 
