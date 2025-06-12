@@ -27,8 +27,8 @@ const projects = [
     liveLink: 'https://e-commerce-tawny-eta-11.vercel.app/'
   },
   {
-    title: 'Weather App',
-    description: 'Weather app using OpenWeatherMap API and React.',
+    title: 'Job Portal',
+    description: 'A job portal application built with React ,spring and SQL .',
     image: 'https://via.placeholder.com/300x180',
     sourceLink: 'https://github.com/yourusername/weather-app',
     liveLink: 'https://weather-app.vercel.app'
