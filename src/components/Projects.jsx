@@ -16,8 +16,8 @@ const projects = [
     title: 'Weather App',
     description: 'A weather app using OpenWeatherMap API and React.',
     image: '/Projects/Weather.png',
-    sourceLink: 'https://github.com/yourusername/ecommerce-app',
-    liveLink: 'https://ecommerce-app.vercel.app'
+    sourceLink:'https://github.com/rupesh-badode/weather-dashboard',
+    liveLink: 'https://weather-dashboard-git-main-rupesh-badodes-projects.vercel.app/'
   },
   {
     title: 'E-commerce App',
