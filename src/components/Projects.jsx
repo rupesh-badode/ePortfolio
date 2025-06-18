@@ -34,18 +34,18 @@ const projects = [
     liveLink: 'https://weather-app.vercel.app'
   },
   {
-    title: 'Weather App',
-    description: 'Weather app using OpenWeatherMap API and React.',
-    image: 'https://via.placeholder.com/300x180',
-    sourceLink: 'https://github.com/yourusername/weather-app',
-    liveLink: 'https://weather-app.vercel.app'
+    title: 'Mighty',
+    description: 'html,css,js',
+    image: 'Mighty.png',
+    sourceLink: 'https://github.com/rupesh-badode/Mighty',
+    liveLink: 'https://rupesh-badode.github.io/Mighty'
   },
   {
-    title: 'Weather App',
-    description: 'Weather app using OpenWeatherMap API and React.',
+    title: 'portfolio',
+    description: 'A portfolio website to showcase my projects and skills.built with html,css,bootstrap.',
     image: 'https://via.placeholder.com/300x180',
     sourceLink: 'https://github.com/yourusername/weather-app',
-    liveLink: 'https://weather-app.vercel.app'
+    liveLink: ''
   }
 ];
 
