@@ -36,14 +36,14 @@ const projects = [
   {
     title: 'Mighty',
     description: 'html,css,js',
-    image: 'Mighty.png',
+    image: '/Projects/Mighty.png',
     sourceLink: 'https://github.com/rupesh-badode/Mighty',
     liveLink: 'https://rupesh-badode.github.io/Mighty'
   },
   {
     title: 'portfolio',
     description: 'A portfolio website to showcase my projects and skills.built with html,css,bootstrap.',
-    image: 'https://via.placeholder.com/300x180',
+    image: '/Projects/Portfolio.png',
     sourceLink: 'https://github.com/yourusername/weather-app',
     liveLink: ''
   }
@@ -80,6 +80,7 @@ const Projects = () => {
             <Card
               sx={{
                 maxWidth: 345,
+                minWidth:345,
                 borderRadius: 3,
                 boxShadow: 3,
                 transition: 'transform 0.3s ease-in-out',
