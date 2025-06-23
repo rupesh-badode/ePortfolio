@@ -34,6 +34,13 @@ const projects = [
     liveLink: 'https://weather-app.vercel.app'
   },
   {
+    title: 'AbFurniture',
+    description: 'React js, bootstrap ,Emailjs',
+    image: '/Projects/AbFurniture.png',
+    sourceLink: 'https://github.com/rupesh-badode/Mighty',
+    liveLink: 'https://rupesh-badode.github.io/Mighty'
+  },
+  {
     title: 'Mighty',
     description: 'html,css,js',
     image: '/Projects/Mighty.png',
@@ -44,8 +51,8 @@ const projects = [
     title: 'portfolio',
     description: 'A portfolio website to showcase my projects and skills.built with html,css,bootstrap.',
     image: '/Projects/Portfolio.png',
-    sourceLink: 'https://github.com/yourusername/weather-app',
-    liveLink: ''
+    sourceLink: 'https://github.com/rupesh-badode/Portfolio',
+    liveLink: 'https://rupesh-badode.github.io/Portfolio/'
   }
 ];
 
@@ -80,6 +87,7 @@ const Projects = () => {
             <Card
               sx={{
                 maxWidth: 345,
+                height:345,
                 minWidth:345,
                 borderRadius: 3,
                 boxShadow: 3,
