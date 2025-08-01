@@ -13,7 +13,7 @@ import {
 
 const projects = [
   {
-    title: 'Smart-Shop: E-commerce App',
+    title: 'Smart-Shop: E-commerce',
     description: 'An e-commerce application built with React, Redux,Express,Mongodb,at all.',
     image: '/Projects/SmartShop.png',
     sourceLink: 'https://smart-shop-rho.vercel.app/',
@@ -27,7 +27,7 @@ const projects = [
     liveLink: 'https://weather-dashboard-git-main-rupesh-badodes-projects.vercel.app/'
   },
   {
-    title: 'E-commerce App',
+    title: 'Next-js:E-Commerce',
     description: 'An e-commerce app built with NextJs,Firebase and Fakestore',
     image: '/Projects/E-commerce.png',
     sourceLink: 'https://github.com/rupesh-badode/E-Commerce',

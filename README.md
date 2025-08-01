@@ -1,9 +1,8 @@
-# ePortfolio
+# ePortfolio   ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rupesh-badode.Smart-Shop-frontend)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b9a0488d-04ac-42dd-aea3-03915ae1b7c3/deploy-status)](https://app.netlify.com/projects/e-portflio/deploys)
 
 This is a personal ePortfolio project built and maintained by [rupesh-badode](https://github.com/rupesh-badode).
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rupesh-badode.Smart-Shop-frontend)
 
 ## Overview
 
