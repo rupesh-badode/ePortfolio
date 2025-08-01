@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Smart-Shop: E-commerce',
     description: 'An e-commerce application built with React, Redux,Express,Mongodb,at all.',
-    image: '/Projects/SmartShop.png',
+    image: '/Projects/Smart-Shop.png',
     sourceLink: 'https://smart-shop-rho.vercel.app/',
     liveLink: 'https://smart-shop-rho.vercel.app/'
   },
