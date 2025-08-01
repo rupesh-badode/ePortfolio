@@ -3,6 +3,8 @@
 
 This is a personal ePortfolio project built and maintained by [rupesh-badode](https://github.com/rupesh-badode).
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rupesh-badode.Smart-Shop-frontend)
+
 ## Overview
 
 The ePortfolio serves as a digital portfolio to showcase your skills, projects, achievements, and experiences. It is designed to help you present your professional journey, technical expertise, and personal interests in an organized and visually appealing way.

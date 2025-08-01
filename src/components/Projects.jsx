@@ -13,6 +13,13 @@ import {
 
 const projects = [
   {
+    title: 'Smart-Shop: E-commerce App',
+    description: 'An e-commerce application built with React, Redux,Express,Mongodb,at all.',
+    image: '/Projects/SmartShop.png',
+    sourceLink: 'https://smart-shop-rho.vercel.app/',
+    liveLink: 'https://smart-shop-rho.vercel.app/'
+  },
+  {
     title: 'Weather App',
     description: 'A weather app using OpenWeatherMap API and React.',
     image: '/Projects/Weather.png',

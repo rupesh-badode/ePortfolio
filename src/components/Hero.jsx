@@ -96,7 +96,7 @@ export default function Hero(){
     return(
         <>
           <Container>
-            <Card sx={{ maxWidth:1500,margin:4,transition: "transform 0.3s ease, box-shadow 0.3s ease","&:hover":{transform:"scale(1.02)"}}}>
+            <Card sx={{ maxWidth:1500,margin:4,transition: "transform 0.5s ease, box-shadow 0.5s ease","&:hover":{transform:"scale(1.005)"}}}>
               <Slide in={true} direction="up" timeout={1000}>
                 <CardHeader title="MERN Stack Developer" />
               </Slide>
