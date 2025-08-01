@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: 'E-commerce App',
-    description: 'An e-commerce app built with NextJs, React, Redux, and Firebase.',
+    description: 'An e-commerce app built with NextJs,Firebase and Fakestore',
     image: '/Projects/E-commerce.png',
     sourceLink: 'https://github.com/rupesh-badode/E-Commerce',
     liveLink: 'https://e-commerce-tawny-eta-11.vercel.app/'
