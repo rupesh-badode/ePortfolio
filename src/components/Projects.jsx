@@ -41,6 +41,13 @@ const projects = [
     liveLink: 'https://weather-app.vercel.app'
   },
   {
+    title: 'Food Delivery App',
+    description: 'A Food-delivery application built with React Ui ',  
+    image: './../Projects/Fean.png',
+    sourceLink: ' ',
+    liveLink: 'https://fean.netlify.app/',
+  },
+  {
     title: 'AbFurniture',
     description: 'React js, bootstrap ,Emailjs',
     image: '/Projects/AbFurniture.png',

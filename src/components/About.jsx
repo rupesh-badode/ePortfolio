@@ -130,7 +130,7 @@ export default function About(){
         <Paper data-aos="fade-up" elevation={3} sx={{ p: 3, mb: 2 }}>
           <Typography variant="h6">💼 Internship at Signamius tech Indore</Typography>
           <Typography variant="subtitle2" color="text.secondary" gutterBottom>
-            Jan 2025 – Present
+            Jan 2025 – Jun 2025
           </Typography>
           <Typography variant="body1" gutterBottom>
             I worked as a Frontend Developer Intern, where I gained hands-on experience in building responsive user interfaces.
